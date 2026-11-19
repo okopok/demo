@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тарифы — {{brand}}</title>
+  <meta name="description" content="{{pricing.subtitle}}">
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">{{brand}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pricing.html">Тарифы</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+      </ul>
+      <a class="btn btn-accent ms-lg-4 mt-3 mt-lg-0" href="contact.html">{{hero.cta}}</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero pb-4">
+  <div class="container">
+    <p class="kicker mb-3">{{pricing.title}}</p>
+    <h1 class="display-5 fw-semibold mb-3">{{pricing.subtitle}}</h1>
+  </div>
+</header>
+
+<section class="pb-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="card-soft pricing-card h-100 p-4">
+          <h2 class="h5 mb-1">{{price1.name}}</h2>
+          <div class="text-secondary mb-3">{{price1.term}}</div>
+          <div class="price mb-4">{{price1.amount}}</div>
+          <ul class="list-unstyled text-secondary mb-4">
+            <li class="mb-2">{{price1.feature1}}</li>
+            <li class="mb-2">{{price1.feature2}}</li>
+            <li class="mb-2">{{price1.feature3}}</li>
+            <li class="mb-2">{{price1.feature4}}</li>
+          </ul>
+          <a class="btn btn-outline-dark w-100 mt-auto" href="contact.html">{{price1.cta}}</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card-soft pricing-card featured h-100 p-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <h2 class="h5 mb-1">{{price2.name}}</h2>
+            <span class="badge text-bg-dark">Хит</span>
+          </div>
+          <div class="text-secondary mb-3">{{price2.term}}</div>
+          <div class="price mb-4">{{price2.amount}}</div>
+          <ul class="list-unstyled text-secondary mb-4">
+            <li class="mb-2">{{price2.feature1}}</li>
+            <li class="mb-2">{{price2.feature2}}</li>
+            <li class="mb-2">{{price2.feature3}}</li>
+            <li class="mb-2">{{price2.feature4}}</li>
+          </ul>
+          <a class="btn btn-accent w-100 mt-auto" href="contact.html">{{price2.cta}}</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card-soft pricing-card h-100 p-4">
+          <h2 class="h5 mb-1">{{price3.name}}</h2>
+          <div class="text-secondary mb-3">{{price3.term}}</div>
+          <div class="price mb-4">{{price3.amount}}</div>
+          <ul class="list-unstyled text-secondary mb-4">
+            <li class="mb-2">{{price3.feature1}}</li>
+            <li class="mb-2">{{price3.feature2}}</li>
+            <li class="mb-2">{{price3.feature3}}</li>
+            <li class="mb-2">{{price3.feature4}}</li>
+          </ul>
+          <a class="btn btn-outline-dark w-100 mt-auto" href="contact.html">{{price3.cta}}</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-secondary mt-4">{{pricing.note}}</p>
+  </div>
+</section>
+
+<section class="section pt-0">
+  <div class="container">
+    <h2 class="h1 fw-semibold mb-4">{{faq_title}}</h2>
+    <div class="accordion" id="faq">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            {{faq1_q}}
+          </button>
+        </h3>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+          <div class="accordion-body text-secondary">{{faq1_a}}</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            {{faq2_q}}
+          </button>
+        </h3>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+          <div class="accordion-body text-secondary">{{faq2_a}}</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            {{faq3_q}}
+          </button>
+        </h3>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+          <div class="accordion-body text-secondary">{{faq3_a}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container d-flex flex-wrap justify-content-between gap-3">
+    <div>{{brand}} · {{footer_note}}</div>
+    <div class="d-flex flex-wrap gap-3">
+      <a href="tel:{{phone}}">{{phone}}</a>
+      <a href="mailto:{{email}}">{{email}}</a>
+      <span>{{telegram}}</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
